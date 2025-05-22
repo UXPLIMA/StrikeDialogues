@@ -1,0 +1,37 @@
+name: Strikes-Dialogues
+version: ${project.version}
+main: com.strikesdialogues.StrikesDialogues
+api-version: '1.20'
+author: StrikesDev, Coziest
+description: Creates interactive dialogues with custom fonts and animations.
+
+depend: [ProtocolLib]
+softdepend: [PlaceholderAPI]
+
+commands:
+  startdialogue:
+    description: Starts a specified dialogue or a custom one.
+    usage: |-
+      /<command> <dialogueId> [player]
+      /<command> custom <line1>,[line2],...
+    aliases: [sd, testdialogue]
+    permission: strikesdialogues.use
+  dialoguereload:
+    description: Reloads the Strikes-Dialogues configuration file.
+    usage: /<command>
+    aliases: [sdreload]
+    permission: strikesdialogues.reload
+
+permissions:
+  strikesdialogues.use:
+    description: Allows players to start predefined dialogues for themselves using /sd <id>.
+    default: true
+  strikesdialogues.start.others:
+    description: Allows players to start dialogues for other specified players using /sd <id> [player].
+    default: op
+  strikesdialogues.custom:
+    description: Allows players to create and display temporary custom dialogues using /sd custom <lines...>.
+    default: op
+  strikesdialogues.reload:
+    description: Allows players to reload the plugin's configuration using /sdreload.
+    default: op

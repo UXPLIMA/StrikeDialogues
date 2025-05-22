@@ -1,0 +1,92 @@
+dialogue-settings:
+  persistent-background-line: "&f"
+  default-animation-delay-ticks: 2
+  default-bar-color: BLUE
+  default-bar-style: SOLID
+  default-hold-time-ticks: 40
+  default-typing-sound: "ui.button.click"
+  default-typing-volume: 0.3
+  default-typing-pitch: 1.8
+  enable-movement-restriction: true
+  custom-command-max-lines: 4
+  custom-command-background-char: "&f"
+  placeholderapi-enabled: true
+  end-action-delay-ticks: 0
+  lock-perspective: true
+  debug-logging: false
+
+dialogues:
+  #Premade dialogue /sd
+  welcome_intro:
+    settings:
+      animation-delay-ticks: 1
+      typing-sound: ""
+      start-sound: ""
+    pages:
+      - - "<#00FF00>Hello <#FFFF00>%player_name%<#00FF00>!"
+        - "<#FFFFFF>Welcome to the world of unknown."
+        - "<#FFFFFF>Balance: <#F32AFF>%vault_eco_balance_fixed%"
+        - "<gradient:#FFAA00:#FF0000>Seek the truth!</gradient>"
+      - - "<#00FF00>SECOND PAGE <3 <#FFFF00>%player_name%<#00FF00>!"
+        - "<#FFFFFF>More text here for second page"
+        - "<#FFFFFF>Support PlaceholdersAPI <#F32AFF>%player_world%"
+        - "<gradient:#00AAAA:#00FFAA>Keep going!</gradient>"
+    end-actions:
+      - "[CONSOLE] say Player %player_name% finished welcome_intro"
+      - "[MESSAGE] &aDialogue complete!"
+
+
+  #Second premade dialogue--
+  hardsample:
+    settings:
+      persistent-background-line: "<#FFFFFF>"
+      animation-delay-ticks: 1
+      typing-sound: "ui.button.click"
+      start-sound: "hardsample"
+    pages:
+      - - "<gradient:#00C1FF:#33FF57>&lWelcome, %player_name%</gradient>!"
+        - "&9This dialogue showcases various features."
+        - "&6&lPlaceholderAPI Supported&r &8| &2Current World: &b%player_world%"
+        - "<gradient:#FDF5E6:#FFD700>Various End-Actions [CONSOLE], [PLAYER], [SOUND], [BROADCAST] & many more!</gradient>"
+        - "&d&lHIGHLY CONFIGURABLE TO BRING YOUR BEST IDEAS TO LIFE!"
+      - - "<#41E8FA>Server Performance: <yellow>%server_tps% TPS"
+        - "<#40E0D0>Location:</#40E0D0> <#98FB98>X:%player_x% Y:%player_y% Z:%player_z%"
+        - "Gamemode: <gold>%player_gamemode%"
+        - "<gradient:#B3FB08:#FF0000>&lGRADIENT SUPPORT</gradient>"
+        - "Vault Balance: <#C0C0C0>%vault_eco_balance_formatted%"
+        - "&6&lPURCHASE THIS PLUGIN NOW IMPROVE YOUR SERVER GAMEPLAY!"
+    end-actions:
+      - "[MESSAGE] &aDialogue Finished! Hope you learned something, %player_name%!"
+      - "[PLAYER] me Is impressed by the dialogue features!"
+      - "[BROADCAST] &e[Server] &f%player_name% just experienced the enhanced dialogue system!"
+      - "[SOUND] entity.player.levelup volume:0.8 pitch:1.2"
+      - "[MESSAGE] &aDialogue Finished! and executed these commands!"
+      - "[MESSAGE] &8&l========================================"
+      - "[MESSAGE] &4&lThe voice/sound you heard is actually from the resource pack!"
+      - "[MESSAGE] &8&l========================================"
+
+
+  no_background_dialogue:
+    settings:
+      persistent-background-line: ""
+    pages:
+      - - "&aThis dialogue has no persistent background."
+    # end-actions: []
+
+  # another_dialogue_id:
+  #   settings:
+  #     ...
+  #   pages:
+  #     - - "Line 1"
+  #       - "Line 2"
+  #   end-actions:
+  #     - "[PLAYER] spawn"
+
+plugin-messages:
+  no-permission: "&cYou don't have permission for that."
+  player-only: "&cThis command can only be run by a player."
+  dialogue-not-found: "&cDialogue '{id}' could not be found."
+  custom-line-limit: "&cYou can only use up to {limit} lines for custom dialogues."
+  reload-success: "<#00AA00>Strikes-Dialogues configuration reloaded successfully."
+  reload-fail: "&cConfiguration reload failed. Check console for errors."
+  must-be-on-ground: "&cYou must be standing firmly on the ground to start a dialogue!"
