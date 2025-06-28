@@ -48,6 +48,11 @@ This plugin is the perfect tool to make your server's stories, quests, or inform
   * **➢ | Per-Dialogue Settings:**
     Override global settings like sounds, animation speed, and appearance for individual dialogues.
 
+## 📂 Resource Pack
+
+To take full advantage of the plugin's features, you can download the recommended resource pack here:
+**[StrikeDialogues Resource Pack](https://www.google.com/search?q=https://builtbybit.com/resources/strikesdialogues-dynamic-dialogues.64556/)**
+
 ## 🛠️ Installation
 
 1.  Download the latest `.jar` file of StrikeDialogues compatible with your server version.
@@ -55,13 +60,18 @@ This plugin is the perfect tool to make your server's stories, quests, or inform
 3.  Restart your server or use the command `/reload`.
 4.  Once the plugin is loaded, a `config.yml` file will be generated in the `plugins/StrikeDialogues/` directory. You can edit this file to configure the plugin to your liking.
 
+## 💬 Support & Community
+
+Join our Discord server to get support, ask questions, or chat with the community\!
+**[Join our Discord](https://www.google.com/search?q=https://discord.gg/uxplima)**
+
 ## 💻 Commands & Permissions
 
-| Command | Description | Permission |
-| :--- | :--- | :--- |
-| `/startdialogue <dialogue> [player]` | Starts a pre-configured dialogue. | `sd.command.startdialogue` |
-| `/sd custom <text>` | Instantly displays the specified text as a dialogue. | `sd.command.custom` |
-| `/sd reload` | Reloads the plugin's configuration file. | `sd.command.reload` |
+| Command                               | Description                                          | Permission                  |
+| :------------------------------------ | :--------------------------------------------------- | :-------------------------- |
+| `/startdialogue <dialogue> [player]` | Starts a pre-configured dialogue.                    | `sd.command.startdialogue` |
+| `/sd custom <text>`                   | Instantly displays the specified text as a dialogue. | `sd.command.custom`        |
+| `/sd reload`                          | Reloads the plugin's configuration file.             | `sd.command.reload`        |
 
 ## ⚙️ Configuration
 
