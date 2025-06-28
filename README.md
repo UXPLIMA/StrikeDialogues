@@ -8,43 +8,31 @@ This plugin is the perfect tool to make your server's stories, quests, or inform
 
   * **➢ | Highly Customizable Configuration:**
     Adjust nearly every setting – including sounds, timing, messages, behavior flags, and per-dialogue options – through the detailed `config.yml`.
-
   * **➢ | Animated Text Display:**
     Show players smooth, multi-line text dialogues with a character-by-character typing animation.
-
   * **➢ | Multi-Page Dialogues:**
     Easily break down longer conversations into sequential, easy-to-read pages.
-
   * **➢ | Customizable Appearance:**
     Control text color, style, and animation speed per dialogue or globally.
-
   * **➢ | Typing & Start Sounds:**
     Add configurable sounds that play as text appears or when a dialogue begins.
-
   * **➢ | Movement Restriction:**
     Optionally prevent players from moving while a dialogue is active.
-
   * **➢ | Perspective Locking:**
     Optionally lock the player's camera view during dialogues (requires ProtocolLib).
-
   * **➢ | Dialogue End Actions:**
     Trigger actions upon dialogue completion, including:
-
       * `[CONSOLE]` - Running commands as the console.
       * `[PLAYER]` - Forcing the player to run commands.
       * `[BROADCAST]` - Broadcast a message to everyone.
       * `[SOUND]` - Play sounds when the dialogue ends.
       * `[MESSAGE]` - Send a message to the player.
-
   * **➢ | Live Custom Text Command:**
     Display specified lines of text instantly using the `/sd custom` command.
-
   * **➢ | PlaceholderAPI Support:**
     Use placeholders in dialogue text and end actions for dynamic content.
-
   * **➢ | Trigger Predefined Dialogues:**
     Start configured dialogues using the `/startdialogue` command, optionally targeting specific players.
-
   * **➢ | Per-Dialogue Settings:**
     Override global settings like sounds, animation speed, and appearance for individual dialogues.
 
@@ -95,6 +83,24 @@ dialogues:
       - "[MESSAGE] &6Dialogue finished! Let the adventure begin!"
       - "[CONSOLE] give {player_name} diamond 1"
 ```
+
+## 📜 License
+
+This project is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License**.
+
+[](https://creativecommons.org/licenses/by-sa/4.0/)
+
+This license allows you to use this plugin on a monetized server and earn money from it.
+
+You are free to:
+
+  * **Share** — copy and redistribute the material in any medium or format.
+  * **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+
+Under the following terms:
+
+  * **Attribution** — You must give appropriate credit to the original author.
+  * **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original. You cannot sell your modified version, it must be shared under these same terms.
 
 ## 📜 Contribution & Editing Guidelines
 
